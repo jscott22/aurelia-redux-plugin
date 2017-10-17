@@ -64,8 +64,9 @@ export function dispatch<T extends Redux.Action, S>(actionCreator: string|Action
     function _dispatcher(...args: any[]): T|Promise<T> {
       if (isString(options.creator) && isFunction(target[options.creator])) {
         return target[options.creator].call(target, _dispatch, ...args);
-      } else if (typeof options.creator === 'function') {
-        return options.creator(_dispatch, ...args);
+      } else if (isFunction(options.creator)) {
+        const creatorFunction = options.creator as Function;
+        return creatorFunction(_dispatch, ...args);
       }
 
       return _dispatch(...args);
