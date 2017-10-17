@@ -33,7 +33,6 @@
     "redux": "^3.7.2"
   },
   "jspm": {
-    "main": "dist/system/aurelia-redux-plugin.js",
-    "format": "system"
+    "main": "dist/system/aurelia-redux-plugin.js"
   }
 }
