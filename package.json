@@ -31,6 +31,17 @@
     "aurelia-metadata": "^1.0.3"
   },
   "jspm": {
-    "main": "dist/system/aurelia-redux-plugin.js"
+    "main": "dist/system/aurelia-redux-plugin.js",
+    "overrides": {
+      "npm:aurelia-binding@1.3.0": {
+        "format": "system"
+      },
+      "npm:aurelia-framework@1.1.5": {
+          "format": "system"
+      },
+      "npm:aurelia-metadata@1.0.3": {
+          "format": "system"
+      }
+    }
   }
 }
