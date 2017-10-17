@@ -36,7 +36,7 @@
     "registry": "npm",
     "jspmPackage": true,
     "main": "aurelia-redux-plugin",
-    "format": "system",
+    "format": "amd",
     "directories": {
       "dist": "dist/system"
     },
