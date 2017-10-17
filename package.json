@@ -26,6 +26,11 @@
     "typings": "^1.4.0"
   },
   "dependencies": {
-    "aurelia-framework": "^1.0.4"
+    "aurelia-binding": "^1.3.0",
+    "aurelia-framework": "^1.1.5",
+    "aurelia-metadata": "^1.0.3"
+  },
+  "jspm": {
+    "main": "dist/system/aurelia-redux-plugin.js"
   }
 }
